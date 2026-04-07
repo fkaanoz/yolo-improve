@@ -1,0 +1,18 @@
+path: C:\Users\wmy\Desktop\yolo\bvn  # 数据集根目录（已正确配置）
+train: images/train  # 简化路径（基于path的相对路径，更稳定）
+val: images/val
+test: images/test
+
+# 新增：明确标注文件夹路径（关键补充）
+label_dir: labels/train  # 训练集标注文件夹（与train图像文件夹对应）
+val_label_dir: labels/val  # 验证集标注文件夹（与val图像文件夹对应）
+
+nc: 7  # 类别数正确（与标注匹配）
+names: ['Alligator crack', 'Block crack', 'Longitudinal crack', 'Oblique crack', 'Pothole', 'Repair', 'Transverse crack']
+
+roboflow:
+  workspace: mcmaster-vkq5k
+  project: pavement-crack-detection-r4n7n
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mcmaster-vkq5k/pavement-crack-detection-r4n7n/dataset/2
