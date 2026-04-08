@@ -1166,6 +1166,7 @@ def parse_model(d, ch, verbose=True, warehouse_manager=None):  # model_dict, inp
                 m = timm.create_model(m, pretrained=args[0], pretrained_cfg_overlay={'file':args[1]}, features_only=True)
             elif len(args) == 1:
                 m = timm.create_model(m, pretrained=args[0], features_only=True)
+            print("m.feature_infom.feature_info", m)
             c2 = m.feature_info.channels()
         elif m in {convnextv2_atto, convnextv2_femto, convnextv2_pico, convnextv2_nano, convnextv2_tiny, convnextv2_base, convnextv2_large, convnextv2_huge,
                    fasternet_t0, fasternet_t1, fasternet_t2, fasternet_s, fasternet_m, fasternet_l,

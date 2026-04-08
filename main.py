@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import torch
 
 # build model from yaml
-model = YOLO("ultralytics/cfg/models/11/yolo11-dyhead-DCNV3.yaml")
+model = YOLO("ultralytics/cfg/models/11/yolo11-fkz.yaml")
 model.info()  # prints layers, params, GFLOPs — should be ~2M params
 
 # dummy forward pass

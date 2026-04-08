@@ -11,9 +11,11 @@ import torch.nn.functional as F
 import torch.fft
 import numpy as np
 try:
-    from mmcv.ops.modulated_deform_conv import ModulatedDeformConv2d, modulated_deform_conv2d
+    from modulated_deform_conv import ModulatedDeformConv2d, modulated_deform_conv2d
 except ImportError as e:
     ModulatedDeformConv2d = nn.Module
+
+
 
 __all__ = ['AdaptiveDilatedConv']
 
